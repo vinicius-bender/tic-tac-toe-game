@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+#titleDiv{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+h1{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #41C240;
+    
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #41C240;;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    position: absolute;
+    content: url("./assets/images/bacon1.png");;
+    line-height: 90px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    position: absolute;
+    content: url("./assets/images/mande_bonk.png");
+    line-height: 100px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FAD559;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 100px;
+}
+
+#baconDiv{
+    margin-top: 5px;
+}
+
+#baconDiv > p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#mandeDiv > p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
