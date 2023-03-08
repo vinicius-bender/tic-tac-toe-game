@@ -4,6 +4,8 @@ let symbols = ["o", "x"];
 let gameOver = false;
 let bacon = 0;
 let mande = 0;
+let resetButton = document.getElementById("resetButton");
+resetButton.addEventListener("click", resetBoard);
 
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -120,5 +122,22 @@ function cleanBoard (){
     for (i = 0; i < board.length; i++){
         board[i] = "";
     }
+    gameOver = false;
+}
+
+function resetBoard (){
+    let squares = document.querySelectorAll(".square");
+    squares.forEach((square) => {
+            square.innerHTML = "";
+
+    });
+
+    for (i = 0; i < board.length; i++){
+        board[i] = "";
+    }
+    mande = 0;
+    bacon = 0;
+    baconPoints.innerText = bacon.toString();
+    mandePoints.innerText = mande.toString();
     gameOver = false;
 }
