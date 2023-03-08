@@ -6,6 +6,8 @@ let bacon = 0;
 let mande = 0;
 let resetButton = document.getElementById("resetButton");
 resetButton.addEventListener("click", resetBoard);
+let clearButton = document.getElementById("clearButton");
+clearButton.addEventListener("click", cleanBoard);
 
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -101,7 +103,7 @@ function isWin (){
             board[position1] != ""){
             if (playerTime == 0){
                     bacon++;
-                }else{
+            }else{
                     mande++;
             }
             return true;
